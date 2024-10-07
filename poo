@@ -1,0 +1,66 @@
+package fracionario;
+
+public class Calcfracao {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Fracao f1 = new Fracao(25,7);
+		Fracao f2 = new Fracao(4,7);
+		System.out.println(f1.soma(f2));
+		System.out.println(f1.divisao(f2));
+		System.out.println(f1.subtracao(f2));
+		System.out.println(f1.multplicacao(f2));
+	}
+
+}
+package fracionario;
+
+public class Fracao {
+	
+	int numerador;
+	int denominador;
+	public Fracao(int numerador, int denominador) {
+		super();
+		this.numerador = numerador;
+		this.denominador = denominador;
+	}
+	public Fracao soma(Fracao outro) {
+		if(this.denominador == outro.denominador) {
+			int num= this.numerador+outro.numerador;
+			int den= this.denominador;
+			
+			return new Fracao(num,den);
+		}else {
+		int num= this.numerador*outro.denominador + outro.numerador*this.denominador;
+		int den= this.denominador*outro.denominador;
+		return new Fracao(num,den);
+		}	
+	}
+	public Fracao subtracao(Fracao outro) {
+		if(outro.denominador==this.denominador) {
+			
+			int num=this.numerador-outro.numerador;
+			int den=this.denominador;
+			return new Fracao(num,den);
+		}else {
+			int num= this.numerador*outro.denominador - outro.numerador*this.denominador;
+			int den= this.denominador*outro.denominador;
+			return new Fracao(num,den);
+		}
+	}
+	public Fracao multplicacao(Fracao outro) {
+		int num= this.numerador*outro.numerador;
+		int den= this.denominador*outro.denominador;
+		return new Fracao(num,den);
+	}
+	public Fracao divisao(Fracao outro) {
+		int den= this.numerador*outro.denominador;
+		int num= this.denominador*outro.numerador;
+		return new Fracao(num,den);
+	}
+	@Override
+	public String toString() {
+		return "Fracao [numerador=" + numerador + ", denominador=" + denominador + "]";
+	}
+	
+}

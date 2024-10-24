@@ -48,3 +48,21 @@ Supondo que N1 e N2 sejam objetos da classe NumeroFracionario, obteremos um
 número N3 através do seguinte comando
 
             N3 = N1.soma(N2);
+            
+** 3- Clientes da Loja**
+
+s Lojas P&I possuem agora, além do modelo Pré-Pago de compras para seus clientes
+comuns, uma nova modalidade: Clientes VIP. Independente do tipo de cliente, sempre
+há um crédito disponível na loja que permite com que cada um faça suas compras.
+Obviamente o cliente que estiver com seu saldo zerado não poderá fazer mais
+compras. Caso queira continuar comprando, o cliente pode “quitar suas dívidas”
+adicionando valores ao seu saldo remanescente (tipo uma conta de celular mesmo).
+Porém para o Cliente VIP há um saldo extra (o famoso “fiado” do interior). Mesmo que
+não haja saldo, porém havendo limite, o cliente VIP pode efetuar suas compras.
+Observe o Modelo abaixo
+
+![loja](https://github.com/user-attachments/assets/11a0a9d7-0910-4322-a793-9403f599bed4)
+
+
+Implemente as classes descritas e uma aplicação exemplo para testar as compras tanto
+dos clientes normais quanto dos clientes VIP.

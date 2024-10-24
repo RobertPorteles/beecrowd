@@ -49,7 +49,7 @@ número N3 através do seguinte comando
 
             N3 = N1.soma(N2);
             
-** 3- Clientes da Loja**
+**3-Clientes da Loja**
 
 s Lojas P&I possuem agora, além do modelo Pré-Pago de compras para seus clientes
 comuns, uma nova modalidade: Clientes VIP. Independente do tipo de cliente, sempre
